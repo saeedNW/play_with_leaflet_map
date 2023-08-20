@@ -38,12 +38,12 @@ function onMapClick(e) {
     console.log("You clicked the map at " + e.latlng.toString())
 
 
-    // const popup = L.popup();
-    //
-    // popup
-    //     .setLatLng(e.latlng)
-    //     .setContent("You clicked the map at " + e.latlng.toString())
-    //     .openOn(map);
+     const popup = L.popup();
+    
+     popup
+         .setLatLng(e.latlng)
+         .setContent("You clicked the map at " + e.latlng.toString())
+         .openOn(map);
 }
 
 map.on('click', onMapClick);
